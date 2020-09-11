@@ -45,10 +45,12 @@
 <body>
 	<center>
 	<h1><?php echo $_SESSION["nom"]." ".$_SESSION["prenom"]; ?></h1>
-	login : <?php echo $_SESSION["login"]; ?>
-	Email : <?php echo $_SESSION["mail"]; ?>
-	Numéro : <?php echo $_SESSION["num"]; ?>
-
+	Login : <?php echo $_SESSION["login"]; ?><br><br>
+	Email : <?php echo $_SESSION["mail"]; ?><br><br>
+	Numéro : <?php echo $_SESSION["numero"]; ?><br><br>
+  Adresse Postale : <?php echo $_SESSION["rue"]; ?> <br><br>
+  Code postal : <?php echo $_SESSION["code_postal"]; ?> <br><br>
+  Ville : <?php echo $_SESSION["ville"]; ?> <br><br>
 </center>
 </body>
 <!-- Pied de page

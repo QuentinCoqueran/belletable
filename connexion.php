@@ -10,6 +10,12 @@ if(isset($_POST["bout"]))
 	$transfert = mysqli_fetch_array($res);
 	$_SESSION["nom"] = $transfert["nom"];
 	$_SESSION["prenom"] = $transfert["prenom"];
+  $_SESSION["login"] = $transfert["login"];
+  $_SESSION["mail"] = $transfert["mail"];
+  $_SESSION["numero"] = $transfert["numero"];
+  $_SESSION["rue"] = $transfert["rue"];
+  $_SESSION["code_postal"] = $transfert["code_postal"];
+  $_SESSION["ville"] = $transfert["ville"];
 	if(mysqli_num_rows($res) > 0)
 	{
 		$_SESSION["login"] = $login;
