@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  ven. 11 sep. 2020 à 12:01
+-- Généré le :  ven. 09 oct. 2020 à 12:12
 -- Version du serveur :  5.7.26
 -- Version de PHP :  7.2.18
 
@@ -40,6 +40,7 @@ CREATE TABLE IF NOT EXISTS `articles` (
   `designation` text NOT NULL,
   `tva` int(11) NOT NULL,
   `statut` int(11) NOT NULL,
+  `img` text NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
@@ -103,7 +104,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `code_postal` int(5) NOT NULL,
   `ville` text NOT NULL,
   PRIMARY KEY (`id`,`login`,`numero`,`mail`)
-) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `user`
@@ -111,7 +112,8 @@ CREATE TABLE IF NOT EXISTS `user` (
 
 INSERT INTO `user` (`id`, `login`, `mdp`, `nom`, `prenom`, `mail`, `numero`, `adm`, `rue`, `code_postal`, `ville`) VALUES
 (5, '123', '123', 'el ghoul', 'elias', '123@gmail.com', 1234567890, 0, '', 0, ''),
-(6, 'test', '123', '***', '***', '***', 4540, 1, '', 0, '');
+(6, 'test', '123', '***', '***', '***', 4540, 1, '', 0, ''),
+(7, 'quentin', 'Quentin92', 'Dupont', 'GÃ©rard', 'quen@live.fr', 90909088, 0, '14 avenue defrance', 94230, 'Cachan');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
