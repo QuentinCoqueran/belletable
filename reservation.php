@@ -22,7 +22,7 @@ session_start();
                   <li><a href="acceuil.php">Accueil</a></li>
                   <li><a href="informations.php">Qui sommes-nous ?</a></li>
                   <li><a href="acceuil.php">Contact</a></li> 
-                  <li><a href="#produit">Nos produits</a></li>
+                  <li><a href="produits.php">Nos produits</a></li>
                   <li><a href="offresemploi.php">Nos offres d'emplois</a></li>
                 </ul>
               </div>
