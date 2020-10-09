@@ -50,12 +50,38 @@
   </div>
   &nbsp&nbsp<h1>Nos Produits</h1>
   <br>
-  <?php
-    while ($ligne = mysqli_fetch_assoc($res))
-    {
-      echo "&nbspType d'emploi:<br>&nbsp".$ligne["categorie"]."<br>&nbspDétail de l'offre :<br>&nbsp".$ligne["intitule"]."<br>&nbspDate de publication :<br>&nbsp".$ligne["datepub"]."&nbsp&nbsp <a href='qcm.php?id=".$ligne["ido"]."'><input type='button' class='boutoffre' name='postuler' value='Postuler'></a><br><br>";
-    }
-  ?>
+  </center>
+  <div class="row">
+    <div class="col-lg-12">
+      <?php
+      $i = 1;
+        while ($ligne = mysqli_fetch_assoc($res))
+        {
+          if ($i % 3 == 0)
+          {
+            echo "<div class='col-lg-4 text-center border border-secondary'>
+            &nbspTitre:&nbsp&nbsp".$ligne["designation"]."<br>
+            <img src=assets/img/".$ligne["img"]."><br><br>
+            &nbspConditionnement :&nbsp&nbsp".$ligne["conditionnement"]."<br>
+            &nbspQuantité disponible :&nbsp&nbsp".$ligne["quantite_dispo"]."<br>
+            &nbspPrix achat :&nbsp&nbsp".$ligne["prix_vente"]."€<br>
+            &nbspPrix de la location/jour:&nbsp&nbsp".$ligne["prix_location"]."€<br></div>";
+          }
+          else
+          {
+            echo "<div class='col-lg-4 text-center border border-secondary'>
+            &nbspTitre:&nbsp&nbsp".$ligne["designation"]."<br>
+            <img src=assets/img/".$ligne["img"]."><br><br>
+            &nbspConditionnement :&nbsp&nbsp".$ligne["conditionnement"]."<br>
+            &nbspQuantité disponible :&nbsp&nbsp".$ligne["quantite_dispo"]."<br>
+            &nbspPrix achat :&nbsp&nbsp".$ligne["prix_vente"]."€<br>
+            &nbspPrix de la location/jour:&nbsp&nbsp".$ligne["prix_location"]."€<br></div>";
+          }
+          $i++;
+        }
+      ?>
+    </div>
+  </div>
     <!-- Pied de page
     ================================================== -->  
     <footer>
