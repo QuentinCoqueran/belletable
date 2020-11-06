@@ -25,7 +25,7 @@
                 <ul class="nav nav-tabs">
                   <li class="hidden"><a href="#page-top"></a></li>
                   <li><img src="assets/img/logobelletable.png" width="41px" height="41px"></li>
-                  <li><a href="acceuil.php">Accueil</a></li>
+                  <li><a href="index.php">Accueil</a></li>
                   <li><a href="#qui">Qui sommes-nous ?</a></li>
                   <li><a href="#contact">Contact</a></li> 
                   <li><a href="produits.php">Nos produits</a></li>
