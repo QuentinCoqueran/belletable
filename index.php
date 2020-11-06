@@ -122,12 +122,14 @@
             <br>20, rue de la gare <br>
         75100 Paris  <br>
         01 75 02 77 14</h4>
+        <a href="legal.php">Cliquez ici pour afficher les mentions légales</a>
+        <div>
           <a class="btn reseau" href="#"><i class="fa fa-twitter fa-2x"></i></a>
           <a class="btn reseau" href="#"><i class="fa fa-facebook fa-2x"></i></a>
           <a class="btn reseau" href="#"><i class="fa fa-google-plus fa-2x"></i></a>
           <a class="btn reseau" href="#"><i class="fa fa-flickr fa-2x"></i></a>
           <a class="btn reseau" href="#"><i class="fa fa-spotify fa-2x"></i></a>
-    
+        </div>
     </div>
 
     </footer>
