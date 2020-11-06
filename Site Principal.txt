@@ -1,0 +1,8 @@
+A faire :
+effacer de la note quand la tache est terminée
+
+gestion d'une commande(panier etc)
+historique des commandes(par utilisateur)
+navbar a refaire + agrandir le logo
+présentation dans acceuil aussi
+Lien dans footer en dessous du numéro avec une pages mentions légales(trouver un site qui génère les mentiosn légales)
