@@ -7,6 +7,9 @@
         -o-background-size: cover;
         font-family: 'TechnaSansRegular';
       }
+      textarea {
+      resize: both;
+      }
 
       img {
         width: 100%;
