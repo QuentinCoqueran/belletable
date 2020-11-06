@@ -1,0 +1,11 @@
+A faire :
+
+
+Ajout du boutton d'acces a la partie admin dans la nav bar si on est admin (si adm = 1)
+
+Gestion des commandes
+Gestion des articles 
+	CRUD + CRUD dyna quantité table archive
+Gestion des utilisateur
+	CRUD
+Statisques de ventes
