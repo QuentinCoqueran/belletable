@@ -18,9 +18,9 @@
     <body>
       <header>
         <center>
-          <div class="container-fluid ">
+          <div class="container-fluid toto">
     	     <h1>Belle Table</h1>
-            <div class="row toto">
+            <div class="row">
               <div class="col-lg-10">
                 <ul class="nav nav-tabs">
                   <li class="hidden"><a href="#page-top"></a></li>

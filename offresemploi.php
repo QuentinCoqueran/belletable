@@ -18,28 +18,28 @@
 	</head>
 	<header>
         <center>
-          <div class="container-fluid ">
+          	<div class="container-fluid toto">
     	    	<h1>Belle Table</h1>
-            		<div class="row toto">
-              			<div class="col-lg-10">
-                			<ul class="nav nav-tabs">
-                  				<li class="hidden"><a href="#page-top"></a></li>
-                          <li><img src="assets/img/logobelletable.png" width="41px" height="41px"></li>
-                  				<li><a href="index.php">Accueil</a></li>
-                  				<li><a href="informations.php">Qui sommes-nous ?</a></li>
-                  				<li><a href="acceuil.php">Contact</a></li> 
-                  				<li><a href="#produit">Nos produits</a></li>
-                  				<li><a href="offresemploi.php">Nos offres d'emplois</a></li>
-                			</ul>
-              			</div>
+            	<div class="row">
+              		<div class="col-lg-10">
+                		<ul class="nav nav-tabs">
+                  			<li class="hidden"><a href="#page-top"></a></li>
+                          	<li><img src="assets/img/logobelletable.png" width="41px" height="41px"></li>
+                  			<li><a href="index.php">Accueil</a></li>
+                  			<li><a href="informations.php">Qui sommes-nous ?</a></li>
+                  			<li><a href="acceuil.php">Contact</a></li> 
+                  			<li><a href="#produit">Nos produits</a></li>
+                  			<li><a href="offresemploi.php">Nos offres d'emplois</a></li>
+                		</ul>
+              		</div>
             		<div class="col-lg-2">
         				<ul class="nav nav-tabs">
         	 				<?php if (!isset($_SESSION["login"])) {?>
-        	 				<li><a href="connexion.php" >Connexion</a></li>
-    			 			<li><a href="inscription.php">Inscription</a></li>
+        	 					<li><a href="connexion.php" >Connexion</a></li>
+    			 				<li><a href="inscription.php">Inscription</a></li>
         	 				<?php }else { ?>
-        	 				<li><a href="profil.php"><?php echo "Bonjour ".$_SESSION["nom"]." ".$_SESSION["prenom"]." !"; ?></a></li>
-        	 				<li><a href="deconnexion.php">Deconnexion</a></li> 
+        	 					<li><a href="profil.php"><?php echo "Bonjour ".$_SESSION["nom"]." ".$_SESSION["prenom"]." !"; ?></a></li>
+        	 					<li><a href="deconnexion.php">Deconnexion</a></li> 
     			 			<?php } ?>
     	   				</ul>
     				</div>

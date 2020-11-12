@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  ven. 09 oct. 2020 à 12:12
+-- Généré le :  jeu. 12 nov. 2020 à 23:27
 -- Version du serveur :  5.7.26
 -- Version de PHP :  7.2.18
 
@@ -42,7 +42,17 @@ CREATE TABLE IF NOT EXISTS `articles` (
   `statut` int(11) NOT NULL,
   `img` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `articles`
+--
+
+INSERT INTO `articles` (`id`, `reference`, `quantite_dispo`, `conditionnement`, `prix_vente`, `prix_location`, `remarque`, `designation`, `tva`, `statut`, `img`) VALUES
+(1, 'REF1', 12, 'pack de 10', 15, 2, 'coucou', 'Jeu de couverts a pois', 20, 1, 'couvertspois.jpeg'),
+(2, 'REF 2', 11, 'Pack de 100', 70, 10, 'coucou', 'Lot d\'assiettes carrees', 20, 1, 'assiettescarres.jpeg'),
+(3, 'REF3', 10, 'Lot de 10', 25, 3, 'hello', 'Verres carrees', 20, 1, 'verrescarree.jpeg'),
+(4, 'REF4', 15, 'Lot 15 ', 15, 4, 'dodod', 'Assiettes creuses', 20, 1, 'assiettescreuse.jpeg');
 
 -- --------------------------------------------------------
 

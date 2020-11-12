@@ -18,13 +18,13 @@
       <header>
         <center>
          <h1> Belle Table </h1>
-          <div class="container-fluid ">
-            <div class="row toto">
+          <div class="container-fluid toto">
+            <div class="row">
               <div class="col-lg-10">
                 <ul class="nav nav-tabs">
                   <li class="hidden"><a href="#page-top"></a></li>
                   <li><img src="assets/img/logobelletable.png" width="41px" height="41px"></li>
-                  <li><a href="accueil.php">Accueil</a></li>
+                  <li><a href="index.php">Accueil</a></li>
                   <li><a href="informations.php">Qui sommes-nous ?</a></li>
                   <li><a href="#contact">Contact</a></li> 
                   <li><a href="produits.php">Nos produits</a></li>
