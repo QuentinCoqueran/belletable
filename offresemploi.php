@@ -18,21 +18,28 @@
 	</head>
 	<header>
         <center>
-          	<div class="container-fluid toto">
-    	    	<h1>Belle Table</h1>
+          	<div class="container-fluid toto nav">
+				<h1>
+					<div class="col-lg-2">
+						<div class="col-lg-6"><img class="ico" src="assets/img/logobelletable.png" ></div>
+						<div class="col-lg-6"></div>
+					</div>
+					<div class="col-lg-offset-2 col-lg-3 belletable">Belle Table</div>
+				</h1>
+				
             	<div class="row">
+					
               		<div class="col-lg-10">
                 		<ul class="nav nav-tabs">
                   			<li class="hidden"><a href="#page-top"></a></li>
-                          	<li><img src="assets/img/logobelletable.png" width="41px" height="41px"></li>
                   			<li><a href="index.php">Accueil</a></li>
                   			<li><a href="informations.php">Qui sommes-nous ?</a></li>
-                  			<li><a href="acceuil.php">Contact</a></li> 
-                  			<li><a href="#produit">Nos produits</a></li>
+                  			<li><a href="index.php">Contact</a></li> 
+                  			<li><a href="produits.php">Nos produits</a></li>
                   			<li><a href="offresemploi.php">Nos offres d'emplois</a></li>
                 		</ul>
               		</div>
-            		<div class="col-lg-2">
+            		<div class="col-lg-2 nav">
         				<ul class="nav nav-tabs">
         	 				<?php if (!isset($_SESSION["login"])) {?>
         	 					<li><a href="connexion.php" >Connexion</a></li>
@@ -53,7 +60,10 @@
 	<?php
 		while ($ligne = mysqli_fetch_assoc($res))
 		{
-			echo "&nbspType d'emploi:<br>&nbsp".$ligne["categorie"]."<br>&nbspDétail de l'offre :<br>&nbsp".$ligne["intitule"]."<br>&nbspDate de publication :<br>&nbsp".$ligne["datepub"]."&nbsp&nbsp <a href='qcm.php?id=".$ligne["ido"]."'><input type='button' class='boutoffre' name='postuler' value='Postuler'></a><br><br>";
+			echo "&nbspType d'emploi:<br>&nbsp".$ligne["categorie"].
+			"<br>&nbspDétail de l'offre :<br>&nbsp".$ligne["intitule"].
+			"<br>&nbspDate de publication :<br>&nbsp".$ligne["datepub"].
+			"&nbsp&nbsp <a href='qcm.php?id=".$ligne["ido"]."'><input type='button' class='boutoffre' name='postuler' value='Postuler'></a><br><br>";
 		}
 	?>
 		<!-- Pied de page

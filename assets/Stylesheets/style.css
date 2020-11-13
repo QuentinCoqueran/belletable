@@ -11,8 +11,8 @@
       resize: both;
       }
 
-      img {
-        width: 100%;
+      .produits{
+        width: 80%;
       }
 
       @font-face {
@@ -24,6 +24,15 @@
         border: 5px solid white;
         box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
 
+      }
+
+      .conn{
+        align-items: right;
+      }
+
+      .ico {
+        align-items: left;
+        width: 80%;
       }
 
       .carousel-caption {
@@ -47,6 +56,7 @@
         text-align: center;
       }
       .fond {
+        font-size: 20px;
       	background-color: #d9dbda;
       	border: 5px;
       	border-color: #09597C;
@@ -58,20 +68,29 @@
 
       }
       .btn {
-          margin-top: 5%;
+          /**margin-top: 5%;
           /*width: 30px;
           height: 30px;*/
           border-radius: 50%;
           /*padding-right: 6%;*/
         /*font-size: 0.6em;*/
       }
-      h1{
+
+      .belletable{
+        font-size: 60px;
+        text-align: right;
+        color: rgb(255, 255, 255);
+      }
+
+      h2{
       	color: #09597C;
       }
+
       .fa-3x {
         min-width: 100px;
         min-height: 100px;
       }
+
       .fa-2x {
         font-size: 1.2em;
 

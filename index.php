@@ -15,49 +15,51 @@
       <!-- Navigation
       ================================================== -->
     <body>
-      <header>
+    <header>
         <center>
-         <h1> Belle Table </h1>
-          <div class="container-fluid toto">
-            <div class="row">
-              <div class="col-lg-10">
-                <ul class="nav nav-tabs">
-                  <li class="hidden"><a href="#page-top"></a></li>
-                  <li><img src="assets/img/logobelletable.png" width="41px" height="41px"></li>
-                  <li><a href="index.php">Accueil</a></li>
-                  <li><a href="informations.php">Qui sommes-nous ?</a></li>
-                  <li><a href="#contact">Contact</a></li> 
-                  <li><a href="produits.php">Nos produits</a></li>
-                  <li><a href="offresemploi.php">Nos offres d'emplois</a></li>
-                </ul>
-              </div>
-              
-            <div class="col-lg-2">
-        	<ul class="nav nav-tabs">
-        	 <?php if (!isset($_SESSION["login"])) {?>
-        	 <li><a href="connexion.php" >Connexion</a></li>
-    			 <li><a href="inscription.php">Inscription</a></li>
-        	 <?php }else { ?>
-        	 <li><a href="profil.php"><?php echo "Bonjour ".$_SESSION["nom"]." ".$_SESSION["prenom"]." !"; ?></a></li>
-        	 <li><a href="deconnexion.php">Deconnexion</a></li> 
-    			 <?php } ?>
-    	   </ul>
-    	</div>
-  		</div>
-  	</div>
-  </center>
-  </header>
+          	<div class="container-fluid toto nav">
+				<h1>
+					<div class="col-lg-2">
+						<div class="col-lg-6"><img class="ico" src="assets/img/logobelletable.png" ></div>
+						<div class="col-lg-6"></div>
+					</div>
+					<div class="col-lg-offset-2 col-lg-3 belletable">Belle Table</div>
+				</h1>
+				
+            	<div class="row">
+					
+              		<div class="col-lg-10">
+                		<ul class="nav nav-tabs">
+                  			<li class="hidden"><a href="#page-top"></a></li>
+                  			<li><a href="index.php">Accueil</a></li>
+                  			<li><a href="informations.php">Qui sommes-nous ?</a></li>
+                  			<li><a href="index.php">Contact</a></li> 
+                  			<li><a href="produits.php">Nos produits</a></li>
+                  			<li><a href="offresemploi.php">Nos offres d'emplois</a></li>
+                		</ul>
+              		</div>
+            		<div class="col-lg-2 nav">
+        				<ul class="nav nav-tabs">
+        	 				<?php if (!isset($_SESSION["login"])) {?>
+        	 					<li><a href="connexion.php" >Connexion</a></li>
+    			 				<li><a href="inscription.php">Inscription</a></li>
+        	 				<?php }else { ?>
+        	 					<li><a href="profil.php"><?php echo "Bonjour ".$_SESSION["nom"]." ".$_SESSION["prenom"]." !"; ?></a></li>
+        	 					<li><a href="deconnexion.php">Deconnexion</a></li> 
+    			 			<?php } ?>
+    	   				</ul>
+    				</div>
+  				</div>
+  			</div>
+  		</center>
+  	</header>
 	<center>
-		<h1>ACCUEUIL</h1>
-
+		<h1 class="text-center">Présentation de Belletable</h1>
+    <br>
     <div class="container fond" id="qui">
-        <h1 class="text-center">Présentation</h1>
         <p class="col-sm-12 col-md-12">Spécialiste de la vente et la location de tous les matériels, la vaisselle, les couverts et tous autres accessoires permettant de dresser une « Belle Table », Belle Table vous propose un catalogue complet de matériel en un seul prestataire :
         VAISSELLE, TABLES, CHAISES, LINGE DE TABLE, TENTES, MOBILIER LUMINEUX, MATERIEL DE CUISINE, …
-
-        Pour vos mariages, anniversaires, séminaires… Toute l’équipe de Belle Table est à votre service pour faire de votre événement professionnel ou personnel, une réussite. 
-
-</p>
+        Pour vos mariages, anniversaires, séminaires… Toute l’équipe de Belle Table est à votre service pour faire de votre événement professionnel ou personnel, une réussite.</p>
       </div>
       <br><br>
 		<div class="container ">
