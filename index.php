@@ -1,13 +1,13 @@
 <?php
+session_start();
   if (isset($_SESSION["login"]))
   {
-  	session_start();
     $login = $_SESSION["login"];
     $id = mysqli_connect("localhost","root","","belletable");
     $req = "select * from user where adm = 1 and where login = $login";
     $res = mysqli_query($id, $req);
     mysqli_query($id,"SET NAMES 'utf8'");
-    $num_rows = mysql_num_rows($res);
+    $num_rows = mysqli_num_rows($res);
   }
 
 	// COMMENTAIRE // 
@@ -58,7 +58,7 @@
         	 					<li><a href="deconnexion.php">Deconnexion</a></li>
                     <?php if ($num_rows > 0) {?>
                       <li><a href="admin.php">Partie administrateur</a></li>
-                    <?php}?>
+                    <?php } ?>
     			 			 <?php } ?>
 
     	   				</ul>
