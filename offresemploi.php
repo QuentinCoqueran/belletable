@@ -1,5 +1,14 @@
 <?php
 	session_start();
+  if (isset($_SESSION["login"]))
+  {
+    $login1 = $_SESSION["login"];
+    $req1 = "select * from user where adm = 1 and login = '$login'";
+    $res1 = mysqli_query($id, $req1);
+    mysqli_query($id,"SET NAMES 'utf8'");
+    $num_rows = mysqli_num_rows($res1);
+  }
+
 	$id = mysqli_connect("localhost","root","","belletable");
 	$req = "select * from jobs";
 	$res = mysqli_query($id, $req);
@@ -10,11 +19,10 @@
 <html>
 	<meta charset="UTF-8" />
 	<head>
-
 		<title>Nos offres d'emplois</title>
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
     	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-    	<link rel="stylesheet" href="assets/Stylesheets/style.css" />
+    	<link rel="stylesheet" href="assets/Stylesheets/style.css"/>
 	</head>
 	<header>
         <center>
@@ -28,8 +36,8 @@
 				</h1>
 				
             	<div class="row">
-					
-              		<div class="col-lg-10">
+    					
+                  		<div class="col-lg-10">
                 		<ul class="nav nav-tabs">
                   			<li class="hidden"><a href="#page-top"></a></li>
                   			<li><a href="index.php">Accueil</a></li>
@@ -46,7 +54,10 @@
     			 				<li><a href="inscription.php">Inscription</a></li>
         	 				<?php }else { ?>
         	 					<li><a href="profil.php"><?php echo "Bonjour ".$_SESSION["nom"]." ".$_SESSION["prenom"]." !"; ?></a></li>
-        	 					<li><a href="deconnexion.php">Deconnexion</a></li> 
+        	 					<li><a href="deconnexion.php">Deconnexion</a></li>
+                    <?php if ($num_rows > 0) {?>
+                      <li><a href="admin.php">Partie administrateur</a></li>
+                    <?php } ?>
     			 			<?php } ?>
     	   				</ul>
     				</div>

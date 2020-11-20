@@ -42,7 +42,10 @@
     			 				<li><a href="inscription.php">Inscription</a></li>
         	 				<?php }else { ?>
         	 					<li><a href="profil.php"><?php echo "Bonjour ".$_SESSION["nom"]." ".$_SESSION["prenom"]." !"; ?></a></li>
-        	 					<li><a href="deconnexion.php">Deconnexion</a></li> 
+        	 					<li><a href="deconnexion.php">Deconnexion</a></li>
+        	 					<?php if ($num_rows > 0) {?>
+                      				<li><a href="admin.php">Partie administrateur</a></li>
+                    			<?php } ?>
     			 			<?php } ?>
     	   				</ul>
     				</div>

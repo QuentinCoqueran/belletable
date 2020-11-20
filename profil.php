@@ -1,5 +1,13 @@
 <?php  
 	session_start();
+  if (isset($_SESSION["login"]))
+  {
+    $login1 = $_SESSION["login"];
+    $req1 = "select * from user where adm = 1 and login = '$login'";
+    $res1 = mysqli_query($id, $req1);
+    mysqli_query($id,"SET NAMES 'utf8'");
+    $num_rows = mysqli_num_rows($res1);
+  }
 ?>
 
 
@@ -41,7 +49,10 @@
     			 				<li><a href="inscription.php">Inscription</a></li>
         	 				<?php }else { ?>
         	 					<li><a href="profil.php"><?php echo "Bonjour ".$_SESSION["nom"]." ".$_SESSION["prenom"]." !"; ?></a></li>
-        	 					<li><a href="deconnexion.php">Deconnexion</a></li> 
+        	 					<li><a href="deconnexion.php">Deconnexion</a></li>
+                    <?php if ($num_rows > 0) {?>
+                      <li><a href="admin.php">Partie administrateur</a></li>
+                    <?php } ?>
     			 			<?php } ?>
     	   				</ul>
     				</div>
