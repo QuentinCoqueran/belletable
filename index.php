@@ -1,5 +1,15 @@
-<?php 
-	session_start();
+<?php
+  if (isset($_SESSION["login"]))
+  {
+  	session_start();
+    $login = $_SESSION["login"];
+    $id = mysqli_connect("localhost","root","","belletable");
+    $req = "select * from user where adm = 1 and where login = $login";
+    $res = mysqli_query($id, $req);
+    mysqli_query($id,"SET NAMES 'utf8'");
+    $num_rows = mysql_num_rows($res);
+  }
+
 	// COMMENTAIRE // 
 ?>
 
@@ -28,7 +38,7 @@
 				
             	<div class="row">
 					
-              		<div class="col-lg-10">
+              		<div class="col-lg-9">
                 		<ul class="nav nav-tabs">
                   			<li class="hidden"><a href="#page-top"></a></li>
                   			<li><a href="index.php">Accueil</a></li>
@@ -38,15 +48,19 @@
                   			<li><a href="offresemploi.php">Nos offres d'emplois</a></li>
                 		</ul>
               		</div>
-            		<div class="col-lg-2 nav">
+            		<div class="col-lg-3 nav">
         				<ul class="nav nav-tabs">
         	 				<?php if (!isset($_SESSION["login"])) {?>
         	 					<li><a href="connexion.php" >Connexion</a></li>
     			 				<li><a href="inscription.php">Inscription</a></li>
         	 				<?php }else { ?>
         	 					<li><a href="profil.php"><?php echo "Bonjour ".$_SESSION["nom"]." ".$_SESSION["prenom"]." !"; ?></a></li>
-        	 					<li><a href="deconnexion.php">Deconnexion</a></li> 
-    			 			<?php } ?>
+        	 					<li><a href="deconnexion.php">Deconnexion</a></li>
+                    <?php if ($num_rows > 0) {?>
+                      <li><a href="admin.php">Partie administrateur</a></li>
+                    <?php}?>
+    			 			 <?php } ?>
+
     	   				</ul>
     				</div>
   				</div>
