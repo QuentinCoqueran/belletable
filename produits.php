@@ -56,7 +56,7 @@
   				</div>
   			</div>
     </header> 
-  <h1>Nos Produits</h1>
+    <h1>Nos Produits</h1>
     </center>
   <div class="row">
     <div class="col-lg-12 jumbotron">
