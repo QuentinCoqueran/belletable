@@ -63,7 +63,11 @@ $id = mysqli_connect("localhost","root","","belletable");
     </div>
 </div>
     <body>
-    
+      <center>
+      <br>
+    <a href="Ajoutproduit.php"><input type="button" value="Ajouter un produit" class="ajoutP"></a>
+
+  <br>
     <table class="content-table">
 	<tr bgcolor="#09597C">
 		<th> Id </th><th> Référence </th><th> Qte Dispo </th>
@@ -86,27 +90,13 @@ $id = mysqli_connect("localhost","root","","belletable");
 		<td><?=$ligne["designation"]; ?></td>
 		<td><?=$ligne["tva"]; ?>%</td>
 		<td><?=$ligne["statut"]; ?></td>
-		<td> <a href="suppArticle.php?row=<?=$ligne["id"];?>" ><img src="assets/img/sup.png" width="20"></a> </td>
-    <td> <a href="modifArticle.php?row=<?=$ligne["id"];?>"><img src="assets/img/modif.png" width="20"></a></td>
+		<td><a href="suppArticle.php?row=<?=$ligne["id"];?>" ><img src="assets/img/sup.png" width="20"></a></td>
+    <td><a href="modifArticle.php?row=<?=$ligne["id"];?>"><img src="assets/img/modif.png" width="20"></a></td>
 		</tr>
 	<?php } $i++; ?>
 
 </table>
-<div class="formu">
-<h1 id="tit">AJOUT DE PRODUIT</h1>
-<form action="adminArticle.php" method="POST" >
-	Référence :<br><input type="text" name="reference"><br>
-	Qte dispo :<br><input type="text" name="qte"><br>
-	Conditionnement :<br><input type="text" name="conditionnement"><br>
-	Prix vente :<br><input type="text" name="prix_vente"><br>
-	Prix location :<br><input type="text" name="prix_location"><br>
-	Remarque :<br><input type="text" name="remarque"><br>
-	Designation :<br><input type="text" name="designation"><br>
-	TVA :<br><input type="text" name="tva"><br>
-	Statut :<br><input type="text" name="statut"><br>
-	<input type="submit" name="ajout">
-</form>
-<hr>
+</center>
 
 </div>
 </body>

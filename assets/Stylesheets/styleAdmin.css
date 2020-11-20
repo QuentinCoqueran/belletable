@@ -41,7 +41,7 @@
   font-family: 'Open Sans', sans-serif;
   transition: all .5s ease;
 }
-a.active,a:hover{
+a.active,.sidebar a:hover{
   border-left: 5px solid #09597C;
   color: #09597C;
 }
@@ -106,9 +106,10 @@ label #btn,label #cancel{
 
 .content-table {
   float: left;
+  margin-top: 5px;
   border-collapse: collapse;
   display:inline-block;
-  margin-left: 244px;
+  margin-left: 400px;
   font-size: 0.9em;
   min-width: 400px;
   border-radius: 5px 5px 0 0;
@@ -146,7 +147,6 @@ label #btn,label #cancel{
 }
 
 .formu{
-    margin-left: 1250px;
     margin-top: -50px;
     background-color: #1e1e1e;
     width: 670px; 
@@ -156,4 +156,12 @@ label #btn,label #cancel{
     position: relative;
   }
 
-
+.ajoutP {
+  padding:6px 0 6px 0;
+  font:bold 13px Arial;
+  background:#f5f5f5;
+  color:#555;
+  border-radius:2px;
+  border:1px solid #ccc;
+  box-shadow:1px 1px 3px #999;
+}
