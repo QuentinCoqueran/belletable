@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+$id = mysqli_connect("localhost","root","","belletable");
 if (isset($_SESSION["login"]))
 {
   $login1 = $_SESSION["login"];
@@ -19,7 +19,6 @@ if(isset($_POST["bout"])){
   $rue = $_POST["rue"];
   $code_postal = $_POST["code_postal"];
   $ville = $_POST["ville"];
-	$id = mysqli_connect("localhost","root","","belletable");
 	$req = "select * from user
 			where login='$login' or mail='$mail' or numero='$numero'";
 	$res = mysqli_query($id,$req);

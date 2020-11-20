@@ -1,9 +1,9 @@
 <?php
 session_start();
+$id = mysqli_connect("localhost","root","","belletable");
   if (isset($_SESSION["login"]))
   {
     $login = $_SESSION["login"];
-    $id = mysqli_connect("localhost","root","","belletable");
     $req = "select * from user where adm = 1 and login = '$login'";
     $res = mysqli_query($id, $req);
     mysqli_query($id,"SET NAMES 'utf8'");

@@ -1,5 +1,6 @@
 <?php
 	session_start();
+  $id = mysqli_connect("localhost","root","","belletable");
   if (isset($_SESSION["login"]))
   {
     $login1 = $_SESSION["login"];
@@ -9,7 +10,6 @@
     $num_rows = mysqli_num_rows($res1);
   }
 
-	$id = mysqli_connect("localhost","root","","belletable");
 	$req = "select * from jobs";
 	$res = mysqli_query($id, $req);
 	mysqli_query($id,"SET NAMES 'utf8'");

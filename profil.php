@@ -1,5 +1,6 @@
 <?php  
 	session_start();
+  $id = mysqli_connect("localhost","root","","belletable");
   if (isset($_SESSION["login"]))
   {
     $login1 = $_SESSION["login"];
