@@ -20,7 +20,7 @@ if(isset($_POST["bout"]))
 	{
 		$_SESSION["login"] = $login;
 		$res2 = mysqli_query($id,$req2);
-		header("location: acceuil.php");
+		header("location: index.php");
 	}else{
 		$erreur = "<h3> Erreur login ou mot de passe invalide </h3>";
 	}
