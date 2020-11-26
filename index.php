@@ -9,7 +9,7 @@ $id = mysqli_connect("localhost","root","","belletable");
     mysqli_query($id,"SET NAMES 'utf8'");
     $num_rows = mysqli_num_rows($res);
   }
-
+ 
 ?>
 
 <html>
