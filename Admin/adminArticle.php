@@ -48,13 +48,13 @@ $id = mysqli_connect("localhost","root","","belletable");
         <i class="fas fa-users" ></i>
         <span>Client</span>
       </a>
-      <a href="#">
+      <a href="CreaOffre.php">
          <i class="fas fa-calendar"></i>
-        <span>Events</span>
+        <span>Offre d'emplois</span>
       </a>
       <a href="#">
         <i class="far fa-question-circle"></i>
-        <span>Offre d'emplois</span>
+        <span>Aide</span>
       </a>
       <a href="index.php">
         <i class="far fa-times-circle"></i>
