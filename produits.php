@@ -58,8 +58,7 @@
             &nbspConditionnement :&nbsp&nbsp".$ligne["conditionnement"]."<br>
             &nbspQuantité disponible :&nbsp&nbsp".$ligne["quantite_dispo"]."<br>
             &nbspPrix achat :&nbsp&nbsp".$ligne["prix_vente"]."€<br>
-            &nbspPrix de la location/jour:&nbsp&nbsp".$ligne["prix_location"]."€<br>
-            <a class='add' href='addpanier.php?id=<?=".$ligne['id']."?>>Ajouter au panier</a> <br></div>";
+            &nbspPrix de la location/jour:&nbsp&nbsp".$ligne["prix_location"]."€<br><br></div>";
           }
           $i++;
         }
