@@ -59,7 +59,7 @@ $id = mysqli_connect("localhost","root","","belletable");
 </center>
     <table class="content-table">
   <tr bgcolor="#09597C">
-    <th> Id </th><th> Intitulé </th><th> Date publication </th>
+    <th> Id </th><th> Intitulé </th><th> Descprition </th><th> Date publication </th>
     <th> Catégorie <th></th><th></th>
   </tr>
   <?php 
@@ -69,6 +69,7 @@ $id = mysqli_connect("localhost","root","","belletable");
   <tr>
     <td><?=$ligne["ido"]; ?></td>
     <td><?=$ligne["intitule"]; ?></td>
+    <td><?=$ligne["description"];?></td>
     <td><?=$ligne["datepub"]; ?></td>
     <td><?=$ligne["categorie"]; ?></td>
     <td><a href="suppOffre.php?row=<?=$ligne["ido"];?>" ><img src="assets/img/sup.png" width="20"></a></td>

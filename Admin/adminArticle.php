@@ -3,20 +3,6 @@ session_start();
 $id = mysqli_connect("localhost","root","","belletable");
 	$req = "select * from articles";
 	$res = mysqli_query($id,$req);
-  if (isset($_POST["ajout"])) {
-    $reference = $_POST["reference"];
-    $qte = $_POST["qte"];
-    $condi = $_POST["conditionnement"];
-    $prixV = $_POST["prix_vente"];
-    $prixL = $_POST["prix_location"];
-    $remarque = $_POST["remarque"];
-    $designation = $_POST["designation"];
-    $tva = $_POST["tva"];
-    $statut = $_POST["statut"];
-    $req2 = "insert into articles (reference, quantite_dispo, conditionnement, prix_vente, prix_location, remarque, designation, tva, statut)
-        VALUES ('$reference', '$qte', '$condi', '$prixV','$prixL','$remarque','$designation','$tva','$statut')";
-        $res2 = mysqli_query($id,$req2);
-  }
  ?>
 
 <!DOCTYPE html>
