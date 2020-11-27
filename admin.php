@@ -38,7 +38,7 @@ $id = mysqli_connect("localhost","root","","belletable");
       </a>
       <a href="#">
          <i class="fas fa-calendar"></i>
-        <span>Events</span>
+        <span>Offre d'emplois</span>
       </a>
       <a href="#">
         <i class="far fa-question-circle"></i>
