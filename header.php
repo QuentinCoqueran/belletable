@@ -1,4 +1,6 @@
 <?php
+require 'panier.class.php';
+$panier = new panier();
 $id = mysqli_connect("localhost","root","","belletable");
   if (isset($_SESSION["login"]))
   {
