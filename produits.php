@@ -1,5 +1,8 @@
 <?php 
-	session_start();
+session_start();
+  require 'header.php';
+  $articles = $DB->query('SELECT * FROM articles');
+  
   $id = mysqli_connect("localhost","root","","belletable");
   if (isset($_SESSION["login"]))
   {
@@ -49,7 +52,7 @@
             &nbspQuantité disponible :&nbsp&nbsp".$ligne["quantite_dispo"]."<br>
             &nbspPrix achat :&nbsp&nbsp".$ligne["prix_vente"]."€<br>
             &nbspPrix de la location/jour:&nbsp&nbsp".$ligne["prix_location"]."€<br>
-            <a class='add' href='addpanier.php?=id".$ligne["id"]."'><i class='fa fa-shopping-basket fa-2x btn'></i>Ajouter au panier</a><br></div></div>";
+            <a class='add' href='addpanier.php?id=".$ligne["id"]."'><i class='fa fa-shopping-basket fa-2x btn'></i>Ajouter au panier</a><br></div></div>";
           }
           else
           {
@@ -60,7 +63,7 @@
             &nbspQuantité disponible :&nbsp&nbsp".$ligne["quantite_dispo"]."<br>
             &nbspPrix achat :&nbsp&nbsp".$ligne["prix_vente"]."€<br>
             &nbspPrix de la location/jour:&nbsp&nbsp".$ligne["prix_location"]."€<br>
-            <a class='add' href='addpanier.php?=id".$ligne["id"]."'><i class='fa fa-shopping-basket fa-2x btn'></i>Ajouter au panier</a><br></div>";
+            <a class='add' href='addpanier.php?id=".$ligne["id"]."'><i class='fa fa-shopping-basket fa-2x btn'></i>Ajouter au panier</a><br></div>";
           }
           $i++;
         }
