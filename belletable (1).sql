@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  ven. 27 nov. 2020 à 14:21
--- Version du serveur :  5.7.26
--- Version de PHP :  7.2.18
+-- Généré le : ven. 04 déc. 2020 à 12:35
+-- Version du serveur :  5.7.31
+-- Version de PHP : 7.3.21
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -19,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données :  `belletable`
+-- Base de données : `belletable`
 --
 
 -- --------------------------------------------------------
@@ -42,7 +41,7 @@ CREATE TABLE IF NOT EXISTS `articles` (
   `statut` int(11) NOT NULL,
   `img` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `articles`
@@ -68,7 +67,7 @@ CREATE TABLE IF NOT EXISTS `commandes_achat` (
   `id_user` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `id_user` (`id_user`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -84,7 +83,7 @@ CREATE TABLE IF NOT EXISTS `jobs` (
   `datepub` datetime NOT NULL,
   `categorie` text NOT NULL,
   PRIMARY KEY (`ido`)
-) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `jobs`
@@ -114,7 +113,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `code_postal` int(5) NOT NULL,
   `ville` text NOT NULL,
   PRIMARY KEY (`id`,`login`,`numero`,`mail`)
-) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `user`
