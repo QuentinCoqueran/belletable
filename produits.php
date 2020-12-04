@@ -40,25 +40,27 @@
       $i = 1;
         while ($ligne = mysqli_fetch_assoc($res))
         {
-          if ($i % 3 == 0)
+          if ($i % 4 == 0)
           {
-            echo "<div class='row'><div class='col-lg-4 text-center border border-secondary'>
+            echo "<div class='row'><div class='col-lg-3 text-center border border-secondary'>
             &nbspTitre:&nbsp&nbsp".$ligne["designation"]."<br><br>
             <img class='produits' src=assets/img/".$ligne["img"]."><br><br>
             &nbspConditionnement :&nbsp&nbsp".$ligne["conditionnement"]."<br>
             &nbspQuantité disponible :&nbsp&nbsp".$ligne["quantite_dispo"]."<br>
             &nbspPrix achat :&nbsp&nbsp".$ligne["prix_vente"]."€<br>
-            &nbspPrix de la location/jour:&nbsp&nbsp".$ligne["prix_location"]."€<br><br></div></div>";
+            &nbspPrix de la location/jour:&nbsp&nbsp".$ligne["prix_location"]."€<br>
+            <a class='add' href='addpanier.php?=id".$ligne["id"]."'>Ajouter au panier</a><br></div></div>";
           }
           else
           {
-            echo "<div class='col-lg-4 text-center border border-secondary'>
+            echo "<div class='col-lg-3 text-center border border-secondary'>
             &nbspTitre:&nbsp&nbsp".$ligne["designation"]."<br><br>
             <img class='produits' src=assets/img/".$ligne["img"]."><br><br>
             &nbspConditionnement :&nbsp&nbsp".$ligne["conditionnement"]."<br>
             &nbspQuantité disponible :&nbsp&nbsp".$ligne["quantite_dispo"]."<br>
             &nbspPrix achat :&nbsp&nbsp".$ligne["prix_vente"]."€<br>
-            &nbspPrix de la location/jour:&nbsp&nbsp".$ligne["prix_location"]."€<br><br></div>";
+            &nbspPrix de la location/jour:&nbsp&nbsp".$ligne["prix_location"]."€<br>
+            <a class='add' href='addpanier.php?=id".$ligne["id"]."'><i class='fas fa-basket fa-2x'></i></a><br></div>";
           }
           $i++;
         }

@@ -15,12 +15,13 @@ $id = mysqli_connect("localhost","root","","belletable");
 <html>
 	<head>
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
-    	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-    	<link rel="stylesheet" href="assets/Stylesheets/styleHeader.css" /> 
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/Stylesheets/styleHeader.css" /> 
+    <script src="https://kit.fontawesome.com/784f019bd6.js" crossorigin="anonymous"></script>
 		<meta charset="utf-8" />
 		<title> Belletable </title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <body>
 <div class="topnav" id="myTopnav">
   <a href="index.php" class="active"><img class="icone" src="assets/img/logobelletable.png" ></a>
