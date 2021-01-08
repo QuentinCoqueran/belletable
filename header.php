@@ -32,6 +32,7 @@ $id = mysqli_connect("localhost","root","","belletable");
   <a href="index.php" class="lien">Contact</a>
   <a href="produits.php" class="lien">Nos produits</a>
   <a href="offresemploi.php" class="lien">Nos offres d'emplois</a>
+<<<<<<< Updated upstream
     <?php 
     if (!isset($_SESSION["login"])) 
     { 
@@ -57,6 +58,20 @@ $id = mysqli_connect("localhost","root","","belletable");
       <?php 
     } 
     ?>
+=======
+      <?php if (!isset($_SESSION["login"])) { ?>
+        <a href="connexion.php" class="lien" style="float: right;">Connexion</a>
+        <a href="inscription.php" class="lien" style="float: right;">Inscription</a>
+        <?php }
+        else { ?>
+          <a href="profil.php" class="lien" style="float: right;"><?php echo "Bonjour ".$_SESSION["nom"]." ".$_SESSION["prenom"]." !"; ?></a>
+
+          <a href="deconnexion.php" class="lien" style="float: right;">Deconnexion</a>
+          <?php if ($num_rows > 0) {?>
+                          <li><a href="admin.php" class="lien" style="float: right;">Administrateur</a></li>
+                        <?php } ?>
+                     <?php } ?>
+>>>>>>> Stashed changes
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
