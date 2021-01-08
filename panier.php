@@ -47,3 +47,10 @@ if (isset($_GET['del']))
             </div>
         </div>
 <center>
+
+
+<?php 
+
+require'footer.php';
+
+?>
