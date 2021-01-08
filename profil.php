@@ -3,7 +3,7 @@
   $id = mysqli_connect("localhost","root","","belletable");
   if (isset($_SESSION["login"]))
   {
-    $login1 = $_SESSION["login"];
+    $login = $_SESSION["login"];
     $req1 = "select * from user where adm = 1 and login = '$login'";
     $res1 = mysqli_query($id, $req1);
     mysqli_query($id,"SET NAMES 'utf8'");

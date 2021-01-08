@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'TechnaSansRegular';
+  src: url('TechnaSans-Regular.otf') format('truetype');
+}
+
 body {
   margin: 0;
   font-family: 'TechnaSansRegular';
@@ -58,6 +63,11 @@ body {
     text-align: left;
   }
 }
+
+a{
+  color: white;
+}
+
 .icone{
   height: 53px;
 }

@@ -33,7 +33,7 @@ $id = mysqli_connect("localhost","root","","belletable");
 		<h1 class="text-center">Présentation de Belletable</h1>
     <br>
     <div class="container fond" id="qui">
-        <p class="col-sm-12 col-md-12">Spécialiste de la vente et la location de tous les matériels, la vaisselle, les couverts et tous autres accessoires permettant de dresser une « Belle Table », Belle Table vous propose un catalogue complet de matériel en un seul prestataire :
+        <p class="col-sm-12 col-md-12 pres_belletable">Spécialiste de la vente et la location de tous les matériels, la vaisselle, les couverts et tous autres accessoires permettant de dresser une « Belle Table », Belle Table vous propose un catalogue complet de matériel en un seul prestataire :
         VAISSELLE, TABLES, CHAISES, LINGE DE TABLE, TENTES, MOBILIER LUMINEUX, MATERIEL DE CUISINE, …
         Pour vos mariages, anniversaires, séminaires… Toute l’équipe de Belle Table est à votre service pour faire de votre événement professionnel ou personnel, une réussite.</p>
       </div>

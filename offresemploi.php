@@ -25,20 +25,20 @@
     	<link rel="stylesheet" href="assets/Stylesheets/style.css"/>
 	</head>
 	<header>
-        <center>
-          <?php include_once("header.php"); ?>
+      <center>
+        <?php include_once("header.php"); ?>
   		</center>
   	</header>
   	<br>
-	&nbsp&nbsp<h1>Nos offres d'emplois</h1>
+	<center><h1>Nos offres d'emplois</h1><centrer>
 	<br>
 	<?php
 		while ($ligne = mysqli_fetch_assoc($res2))
 		{
-			echo "&nbspType d'emploi:<br>&nbsp".$ligne["categorie"].
+			echo "<div>&nbspType d'emploi:<br>&nbsp".$ligne["categorie"].
 			"<br>&nbspDétail de l'offre :<br>&nbsp".$ligne["intitule"].
 			"<br>&nbspDate de publication :<br>&nbsp".$ligne["datepub"].
-			"&nbsp&nbsp <a href='qcm.php?id=".$ligne["ido"]."'><input type='button' class='boutoffre' name='postuler' value='Postuler'></a><br><br>";
+			"&nbsp&nbsp <a href='qcm.php?id=".$ligne["ido"]."'><input type='button' class='boutoffre' name='postuler' value='Postuler'></a><br><br></div>";
 		}
 	?>
 		<!-- Pied de page
