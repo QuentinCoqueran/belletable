@@ -3,7 +3,7 @@
   $id = mysqli_connect("localhost","root","","belletable");
   if (isset($_SESSION["login"]))
   {
-    $login1 = $_SESSION["login"];
+    $login = $_SESSION["login"];
     $req1 = "select * from user where adm = 1 and login = '$login'";
     $res1 = mysqli_query($id, $req1);
     mysqli_query($id,"SET NAMES 'utf8'");
@@ -11,7 +11,7 @@
   }
 
 	$req = "select * from jobs";
-	$res = mysqli_query($id, $req);
+	$res2 = mysqli_query($id, $req);
 	mysqli_query($id,"SET NAMES 'utf8'");
 ?>
 
@@ -33,7 +33,7 @@
 	&nbsp&nbsp<h1>Nos offres d'emplois</h1>
 	<br>
 	<?php
-		while ($ligne = mysqli_fetch_assoc($res))
+		while ($ligne = mysqli_fetch_assoc($res2))
 		{
 			echo "&nbspType d'emploi:<br>&nbsp".$ligne["categorie"].
 			"<br>&nbspDétail de l'offre :<br>&nbsp".$ligne["intitule"].
