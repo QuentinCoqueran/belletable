@@ -38,8 +38,11 @@ $id = mysqli_connect("localhost","root","","belletable");
         <a href="inscription.php" class="lien" style="float: right;">Inscription</a>
         <?php }
         else { ?>
-          <a href="profil.php" class="lien" style="float: right;"><?php echo "Bonjour ".$_SESSION["nom"]." ".$_SESSION["prenom"]." !"; ?></a>
           <a href="deconnexion.php" class="lien" style="float: right;">Deconnexion</a>
+          <a href="panier.php" class="lien" style="float: right;">Votre Panier</a>
+          <a href="profil.php" class="lien" style="float: right;"><?php echo "Bonjour ".$_SESSION["nom"]." ".$_SESSION["prenom"]." !"; ?></a>
+          
+          
           <?php if ($num_rows > 0) {?>
                           <li><a href="admin.php" class="lien" style="float: right;">Administrateur</a></li>
                         <?php } ?>
