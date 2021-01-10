@@ -75,6 +75,6 @@ session_start();
     
     <?php
 
-    require'footer.php';
+    require 'footer.php';
 
     ?>

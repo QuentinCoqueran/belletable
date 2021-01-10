@@ -1,11 +1,12 @@
 
 <?php
 	session_start();
+	require 'header.php';
 	$id = mysqli_connect("localhost","root","","belletable");
   	if (isset($_SESSION["login"]))
   	{
     	$login1 = $_SESSION["login"];
-    	$req1 = "select * from user where adm = 1 and login = '$login'";
+    	$req1 = "select * from user where adm = 1 and login = '$login1'";
     	$res1 = mysqli_query($id, $req1);
     	mysqli_query($id,"SET NAMES 'utf8'");
     	$num_rows = mysqli_num_rows($res1);
@@ -22,9 +23,7 @@
     	<link rel="stylesheet" href="assets/Stylesheets/style.css" /> 
 	</head>
 	<header>
-        <center>
-          <?php include_once("header.php"); ?> 
-  		</center>
+        
   	</header>
 	<center>
 		<h1> Login QCM Emploi Belle Table </h1>
@@ -43,7 +42,7 @@
 		{
 			$niveau = $_POST['niveau'];
 			$_SESSION["niveau"] = $niveau;
-			$id = mysqli_connect("localhost","root","","qcm_belle_table");
+			$id = mysqli_connect("localhost","root","","belletable");
 			mysqli_query($id, "SET NAMES 'utf8'");
 			$req = "select * from questions where $niveau = niveau order by rand() limit 10";
 			$res = mysqli_query($id, $req);
@@ -58,7 +57,7 @@
 					$res2 = mysqli_query($id, $req2);
 					while ($ligne2 = mysqli_fetch_assoc($res2))
 					{
-						echo "<input type='radio' name='".$ligne["idq"]."' value='".$ligne2["ok"]."''>".$ligne2["libelle"]."<br />";
+						echo "<input type='radio' name='".$ligne["idq"]."' value='".$ligne2["ok"]."''>" .$ligne2["libelle"]."<br />";
 					}
 					echo '<br /><br />';
 				}

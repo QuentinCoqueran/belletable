@@ -8,6 +8,15 @@ body {
   font-family: 'TechnaSansRegular';
 }
 
+.lien_retour{
+  color: blue;
+}
+
+.produits_panier{
+  max-width: 250;
+  height: auto;
+}
+
 .topnav {
   overflow: hidden;
   background-color: #333;

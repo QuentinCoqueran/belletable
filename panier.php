@@ -27,17 +27,17 @@ if (isset($_GET['del']))
                 $articles = $DB->query('SELECT * FROM articles WHERE id IN ('.implode(',',$ids).')');
                 
                 foreach ($articles as $article):
-                    /* var_dump($article); */
+                    var_dump($article);
                     ?>
                 
-                <div class="ligne">
-                    <img src="" >
+                <div class="ligne col-md-12">
+                    <img class="produits_panier" src="assets/img/<?=$article->img;?>">
                     <span class="nom"><?=$article->designation; ?></span>&nbsp&nbsp&nbsp
                     <span class="prix"><?= number_format($article->prix_vente,2,',',' '); ?>€</span>&nbsp&nbsp&nbsp
                     <span class="quantité">Quantité</span>&nbsp&nbsp&nbsp
                     <span class="total"><?= number_format($article->prix_vente * 1.196,2,',',' '); ?>€</span>&nbsp&nbsp&nbsp
                     <span class="actions">Les actions
-                        <a href="panier.php?del=<?=$article->id; ?>"><i class="fa fa-trash fa-2x suppp"></i></a>
+                        <a href="panier.php?del=<?=$article->id; ?>"><i class="fa fa-del fa-2x suppp"></i></a>
                     </span>
                 </div>
                 <?php endforeach; ?>
@@ -51,6 +51,6 @@ if (isset($_GET['del']))
 
 <?php 
 
-require'footer.php';
+require 'footer.php';
 
 ?>

@@ -9,9 +9,10 @@ if(isset($_GET["id"]))
         die("Ce produit n'existe pas");
     }
     $panier->add($articles[0]->id);
-    die('Le produit a bien été ajouté au panier <a href="javascript:history.back()">retourner sur le catalogue</a>');
+    die('<center>Le produit a bien été ajouté au panier <a class="lien_retour" href="javascript:history.back()">retourner sur le catalogue</a>');
 } else
 {
     die("Vous n'avez pas sélectionné de produit a ajouter");
 }
+require 'footer.php';
 ?>

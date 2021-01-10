@@ -1,10 +1,11 @@
 <?php
 	session_start();
-
+	var_dump($_SESSION);
 	$log = $_SESSION["login"];
 	$niveau = $_SESSION["niveau"];
-	$id = mysqli_connect("localhost","root","","qcm_belle_table");
+	$id = mysqli_connect("localhost","root","","belletable");
 	$points = 0;
+	$date = date('d-m-y h:i:s');
 	$i = 0;
 	foreach ($_POST as $numq => $result)
 	{
@@ -19,7 +20,7 @@
 		else
 			echo "Pour la question n° ".$i." la bonne réponse était : ".$ligne["libelle"]. ".<br>";
 	}
-	$req2 = "insert into resultats (login, note, niveau) values ('$log', '$points', '$niveau')";
+	$req2 = "insert into resultats (date, note, niveau) values ('$date', '$points', '$niveau')";
 	$res2 = mysqli_query($id, $req2);
 	echo "<br> Votre note est de ".$points." sur 10!";
 ?>
