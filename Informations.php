@@ -32,7 +32,7 @@
   	</header>
 	<center>
     <body>
-      <br><br>
+      <br><br><br>
       <div class="container fond">
         <h1 class="text-center">Notre équipe</h1>
         <img class="col-sm-12 col-md-5 col-md-push-7" src="assets/img/téléchargement.jpeg"> 

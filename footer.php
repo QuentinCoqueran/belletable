@@ -12,8 +12,7 @@
           <a class="btn reseau" href="#"><i class="fa fa-twitter fa-2x"></i></a>
           <a class="btn reseau" href="#"><i class="fa fa-facebook fa-2x"></i></a>
           <a class="btn reseau" href="#"><i class="fa fa-google-plus fa-2x"></i></a>
-          <a class="btn reseau" href="#"><i class="fa fa-flickr fa-2x"></i></a>
-          <a class="btn reseau" href="#"><i class="fa fa-spotify fa-2x"></i></a>
+          <a class="btn reseau" href="#"><i class="fa fa-instagram fa-2x"></i></a>
         </div>
       </div>
     </footer>

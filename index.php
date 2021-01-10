@@ -34,11 +34,11 @@ $id = mysqli_connect("localhost","root","","belletable");
     <br>
     <div class="container fond" id="qui">
         <p class="col-sm-12 col-md-12 pres_belletable">Spécialiste de la vente et la location de tous les matériels, la vaisselle, les couverts et tous autres accessoires permettant de dresser une « Belle Table », Belle Table vous propose un catalogue complet de matériel en un seul prestataire :
-        VAISSELLE, TABLES, CHAISES, LINGE DE TABLE, TENTES, MOBILIER LUMINEUX, MATERIEL DE CUISINE, …
-        Pour vos mariages, anniversaires, séminaires… Toute l’équipe de Belle Table est à votre service pour faire de votre événement professionnel ou personnel, une réussite.</p>
+        VAISSELLE, TABLES, CHAISES, LINGE DE TABLE, TENTES, MOBILIER LUMINEUX, MATERIEL DE CUISINE, … <br>
+        Pour vos mariages, anniversaires, séminaires… <br>Toute l’équipe de Belle Table est à votre service pour faire de votre événement professionnel ou personnel, une réussite.</p>
       </div>
       <br><br>
-		<div class="container ">
+		<div class="container">
         <div class="row-lg-8">
           <div id ="carousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">

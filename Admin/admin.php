@@ -44,7 +44,7 @@ $id = mysqli_connect("localhost","root","","belletable");
         <i class="far fa-question-circle"></i>
         <span>Centre d'aide</span>
       </a>
-      <a href="index.php">
+      <a href="../index.php">
         <i class="far fa-times-circle"></i>
         <span>Quitter</span>
       </a>

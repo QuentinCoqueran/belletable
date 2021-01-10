@@ -1,8 +1,0 @@
-A faire :
-effacer de la note quand la tache est terminée
-
-lien partie admin
-gestion d'une commande(panier etc)
-historique des commandes(par utilisateur)
-
-

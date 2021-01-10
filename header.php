@@ -29,7 +29,7 @@ $id = mysqli_connect("localhost","root","","belletable");
 <div class="topnav" id="myTopnav">
   <a href="index.php" class="active"><img class="icone" src="assets/img/logobelletable.png" ></a>
   <a href="informations.php" class="lien">Qui sommes-nous ?</a>
-  <a href="index.php" class="lien">Contact</a>
+  <a href="index.php#contact" class="lien">Contact</a>
   <a href="produits.php" class="lien">Nos produits</a>
   <a href="offresemploi.php" class="lien">Nos offres d'emplois</a>
 
@@ -44,7 +44,7 @@ $id = mysqli_connect("localhost","root","","belletable");
           
           
           <?php if ($num_rows > 0) {?>
-                          <li><a href="admin.php" class="lien" style="float: right;">Administrateur</a></li>
+                          <li><a href="Admin/admin.php" class="lien" style="float: right;">Gestion du Site</a></li>
                         <?php } ?>
                      <?php } ?>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">

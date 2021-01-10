@@ -42,47 +42,55 @@ $id = mysqli_connect("localhost","root","","belletable");
         <i class="far fa-question-circle"></i>
         <span>Aide</span>
       </a>
-      <a href="index.php">
+      <a href="../index.php">
         <i class="far fa-times-circle"></i>
         <span>Quitter</span>
       </a>
     </div>
 </div>
     <body>
-      <center>
+      
       <br>
-    <a href="Ajoutproduit.php"><input type="button" value="Ajouter un produit" class="ajoutP"></a>
+    
 
   <br>
-    <table class="content-table">
-	<tr bgcolor="#09597C">
-		<th> Id </th><th> Référence </th><th> Qte Dispo </th>
-		<th> Conditionnement </th><th> Prix vente </th>
-		<th> Prix location </th><th> Remarque </th><th> Désignation </th>
-		<th> TVA </th><th> Statut </th> <th></th><th></th>
-	</tr>
-	<?php 
-	$i = 0;
-	while($ligne = mysqli_fetch_assoc($res)){
-	?>
-	<tr>
-		<td><?=$ligne["id"]; ?></td>
-		<td><?=$ligne["reference"]; ?></td>
-		<td><?=$ligne["quantite_dispo"]; ?></td>
-		<td><?=$ligne["conditionnement"]; ?></td>
-		<td><?=$ligne["prix_vente"]; ?>€</td>
-		<td><?=$ligne["prix_location"]; ?>€/Jour</td>
-		<td><?=$ligne["remarque"]; ?></td>
-		<td><?=$ligne["designation"]; ?></td>
-		<td><?=$ligne["tva"]; ?>%</td>
-		<td><?=$ligne["statut"]; ?></td>
-		<td><a href="suppArticle.php?row=<?=$ligne["id"];?>" ><img src="assets/img/sup.png" width="20"></a></td>
-    <td><a href="modifArticle.php?row=<?=$ligne["id"];?>"><img src="assets/img/modif.png" width="20"></a></td>
-		</tr>
-	<?php } $i++; ?>
+    <div class="row-md-12"> 
+    <center>
+      <a href="Ajoutproduit.php"><input type="button" value="Ajouter un produit" class="ajoutP"></a>
+    </center>
+    </div>
+      <div class="row-md-12"> 
+      <center>
+        <table class="content-table">
+          <tr bgcolor="#09597C">
+            <th> Id </th><th> Référence </th><th> Qte Dispo </th>
+            <th> Conditionnement </th><th> Prix vente </th>
+            <th> Prix location </th><th> Remarque </th><th> Désignation </th>
+            <th> TVA </th><th> Statut </th> <th></th><th></th>
+          </tr>
+          <?php 
+          $i = 0;
+          while($ligne = mysqli_fetch_assoc($res)){
+          ?>
+          <tr>
+            <td><?=$ligne["id"]; ?></td>
+            <td><?=$ligne["reference"]; ?></td>
+            <td><?=$ligne["quantite_dispo"]; ?></td>
+            <td><?=$ligne["conditionnement"]; ?></td>
+            <td><?=$ligne["prix_vente"]; ?>€</td>
+            <td><?=$ligne["prix_location"]; ?>€/Jour</td>
+            <td><?=$ligne["remarque"]; ?></td>
+            <td><?=$ligne["designation"]; ?></td>
+            <td><?=$ligne["tva"]; ?>%</td>
+            <td><?=$ligne["statut"]; ?></td>
+            <td><a href="suppArticle.php?row=<?=$ligne["id"];?>" ><img src="assets/img/sup.png" width="20"></a></td>
+            <td><a href="modifArticle.php?row=<?=$ligne["id"];?>"><img src="assets/img/modif.png" width="20"></a></td>
+            </tr>
+          <?php } $i++; ?>
+        </table>
+      </center>
+      <div class="row-lg-8">
 
-</table>
-</center>
 
 </div>
 </body>
