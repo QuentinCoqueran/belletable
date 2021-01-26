@@ -53,15 +53,14 @@ $id = mysqli_connect("localhost","root","","belletable");
       <br>
     
 
-  <br>
-    <div class="row-md-12"> 
+  <br> 
     <center>
       <a href="Ajoutproduit.php"><input type="button" value="Ajouter un produit" class="ajoutP"></a>
     </center>
-    </div>
-      <div class="row-md-12"> 
+    
+      
       <center>
-        <table class="content-table">
+        <table class="content-table-admin content-table">
           <tr bgcolor="#09597C">
             <th> Id </th><th> Référence </th><th> Qte Dispo </th>
             <th> Conditionnement </th><th> Prix vente </th>

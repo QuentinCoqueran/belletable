@@ -44,7 +44,7 @@ $id = mysqli_connect("localhost","root","","belletable");
       </a>
       <a href="#">
         <i class="far fa-question-circle"></i>
-        <span>Offre d'emplois</span>
+        <span>Aide</span>
       </a>
       <a href="../index.php">
         <i class="far fa-times-circle"></i>
@@ -54,7 +54,7 @@ $id = mysqli_connect("localhost","root","","belletable");
 </div>
 
 
-<table class="content-table">
+<table class="content-table-client content-table">
 	<tr bgcolor="#09597C">
 		<th> Id </th><th> Login </th><th> Mot de passe </th>
 		<th> Nom </th><th> Prénom </th>

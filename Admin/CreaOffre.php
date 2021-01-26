@@ -57,7 +57,7 @@ $id = mysqli_connect("localhost","root","","belletable");
     <a href="AjoutOffre.php"><input type="button" value="Ajouter une offre" class="ajoutP"></a>
   <br>
 </center>
-    <table class="content-table">
+    <table class="content-table-offre content-table">
   <tr bgcolor="#09597C">
     <th> Id </th><th> Intitulé </th><th> Descprition </th><th> Date publication </th>
     <th> Catégorie <th></th><th></th>

@@ -104,12 +104,38 @@ label #btn,label #cancel{
   }
 }
 
-.content-table {
+.content-table-client {
   float: left;
   margin-top: 5px;
   border-collapse: collapse;
   display:inline-block;
   margin-left: 400px;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  position: absolute;
+}
+.content-table-offre {
+  float: left;
+  margin-top: 5px;
+  border-collapse: collapse;
+  display:inline-block;
+  margin-left: 600px;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  position: absolute;
+}
+.content-table-admin {
+  float: left;
+  margin-top: 5px;
+  border-collapse: collapse;
+  display:inline-block;
+  margin-left: -500px;
   font-size: 0.9em;
   min-width: 400px;
   border-radius: 5px 5px 0 0;
