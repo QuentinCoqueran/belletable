@@ -10,7 +10,7 @@ Site Web PPE Belletable
   login : test  
   mdp : 123
   
-  Avant de de se rendre sur le site vous devez importer le fichier SQL dans votre SGBD afin d'avoir tous les éléments
+  Avant de de se rendre sur le site vous devez importer le fichier SQL : belletable.sql dans votre SGBD afin d'avoir tous les éléments
   nécessaires au bon focntionnement du site Belletable!
 
 
