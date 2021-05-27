@@ -3,7 +3,7 @@ session_start();
   require 'header.php';
   $articles = $DB->query('SELECT * FROM articles');
   
-  $id = mysqli_connect("localhost","root","","belletable");
+  $id = mysqli_connect("localhost","root","aze!123","belletable_web_quentin");
   if (isset($_SESSION["login"]))
   {
     $login1 = $_SESSION["login"];

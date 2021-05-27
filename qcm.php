@@ -2,7 +2,7 @@
 <?php
 	session_start();
 	require 'header.php';
-	$id = mysqli_connect("localhost","root","","belletable");
+	$id = mysqli_connect("localhost","root","aze!123","belletable_web_quentin");
   	if (isset($_SESSION["login"]))
   	{
     	$login1 = $_SESSION["login"];
@@ -42,7 +42,7 @@
 		{
 			$niveau = $_POST['niveau'];
 			$_SESSION["niveau"] = $niveau;
-			$id = mysqli_connect("localhost","root","","belletable");
+			$id = mysqli_connect("localhost","root","aze!123","belletable_web_quentin");
 			mysqli_query($id, "SET NAMES 'utf8'");
 			$req = "select * from questions where $niveau = niveau order by rand() limit 10";
 			$res = mysqli_query($id, $req);

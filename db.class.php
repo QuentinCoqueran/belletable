@@ -3,8 +3,8 @@ class DB{
 
     private $host = 'localhost';
     private $username = 'root';
-    private $password = '';
-    private $database = 'belletable';
+    private $password = 'aze!123';
+    private $database = 'belletable_web_quentin';
     public $db;
 
     public function __construct($host = null, $username = null, $password = null, $database = null)

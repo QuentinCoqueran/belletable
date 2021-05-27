@@ -3,7 +3,7 @@
 	var_dump($_SESSION);
 	$log = $_SESSION["login"];
 	$niveau = $_SESSION["niveau"];
-	$id = mysqli_connect("localhost","root","","belletable");
+	$id = mysqli_connect("localhost","root","aze!123","belletable_web_quentin");
 	$points = 0;
 	$date = date('d-m-y h:i:s');
 	$i = 0;
